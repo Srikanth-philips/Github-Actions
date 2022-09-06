@@ -9,6 +9,7 @@
     runs-on: ubuntu-latest
     steps:
       - name: checkout
+        id: mycache
         uses: actions/checkout@v3
       - name: setup JDK
         uses: actions/setup-java@v1
@@ -22,3 +23,6 @@
          path: ~/.m2
          key: ${{runner.os}}-build-${{ hashFiles('**/pom.xml') }}
          restore-keys: ${{runner.os}}-build
+      - name: verifing the build
+        if: steps.mycache.outputs.cache-hit != 'true'
+        run: mvn verify
