@@ -5,7 +5,7 @@
   pull_request:
    branches: [main]
  jobs:
-   workflow_dispatch:
+   Build:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
