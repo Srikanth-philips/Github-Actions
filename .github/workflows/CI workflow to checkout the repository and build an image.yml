@@ -16,7 +16,7 @@
         with: 
           java-version: 1.8
       - name: build with maven
-        run: mvn package verfy
+        run: mvn package verify
       - name: caching the maven
         uses: actions/cache@v2
         with:
