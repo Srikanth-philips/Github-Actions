@@ -16,3 +16,9 @@
           java-version: 1.8
       - name: build with maven
         run: mvn package
+      - name: cache mavne dependencies
+        uses: actions/cache@v2
+        with:
+         path: ~/.m2
+         key: ${{runner.os}}-build-${{ hashFiles('**/pom.xml') }}
+         restore-keys: ${{runner.os}}-build
