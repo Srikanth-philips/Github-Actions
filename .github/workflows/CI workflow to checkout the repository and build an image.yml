@@ -6,13 +6,13 @@
    branches: [main]
  jobs:
    build:
-     runs-on: ubuntu-latest
-     steps:
-      -name: checkout
-      uses: actions/checkout@v2
-      -name: setup-JDK
-      uses: actions/setup-java@v1
-      with:
-       java-version: 1.8
-      -name: Buildwith maven
-      uses: mvn package
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: setup JDK
+        uses: actions/setup-java@v1
+        with: 
+          java-version: 1.8
+      - name: build with maven
+        run: mvn package
