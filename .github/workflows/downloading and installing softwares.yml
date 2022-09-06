@@ -1,5 +1,5 @@
 name: installing-and-checking-ver-of bat
-on: [ push ]
+on: [push]
 jobs:
  check-version:
   runs-on: ubuntu-latest
