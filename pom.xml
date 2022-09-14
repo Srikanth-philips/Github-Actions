@@ -14,6 +14,11 @@
   <url>https://www.coveros.com/</url>
   <inceptionYear>2018</inceptionYear>
 
+  <pluginGroups>
+    <pluginGroup>
+      org.sonarsource.scanner.maven
+    </pluginGroup>
+  </pluginGroups>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -34,26 +39,4 @@
       </plugin>
     </plugins>
   </build>
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.mojo</groupId>
-      <artifactId>sonar-maven-plugin</artifactId>
-      <version>3.4.0.905</version>
-      <type>pom</type>
-    </dependency>
-  </dependencies>
-  <profiles>
-    <profile>
-      <id>sonar</id>
-      <properties>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-      </properties>
-    </profile>
-  </profiles>
 </project>
