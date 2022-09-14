@@ -62,7 +62,7 @@
               </configuration>
             </execution>
           </executions>
-        </pugin>
+        </plugin>
       </plugins>
     </build>  
     </profile>
