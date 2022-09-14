@@ -34,7 +34,8 @@
       </plugin>
     </plugins>
   </build>
-  <profile>
+  <profiles>
+    <profile>
     <id>coverage</id>
     <build>
       <plugins>
@@ -64,5 +65,6 @@
         </pugin>
       </plugins>
     </build>  
-  </profile>
+    </profile>
+  </profiles>
 </project>
