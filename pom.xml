@@ -32,9 +32,6 @@
           <target>${jdk.version}</target>
         </configuration>
       </plugin>
-      <plugin>
-        
-      </plugin>
     </plugins>
   </build>
   <dependencies>
