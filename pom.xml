@@ -51,9 +51,6 @@
   <profiles>
     <profile>
       <id>sonar</id>
-      <activation>
-        <activateByDefault>true</activateByDefault>
-      </activation>
       <properties>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
       </properties>
