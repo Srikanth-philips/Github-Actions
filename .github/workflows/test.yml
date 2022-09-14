@@ -21,7 +21,7 @@ jobs:
     - name: Build and Sonarscan
       run: |
             mvn clean verify
-            mvn -f radium_cdrnotification_listener/ sonar:sonar \
+            mvn sonar:sonar \
              -Dsonar.projectKey=${{ secrets.SONAR_PROJECTKEY }} \
              -Dsonar.host.url=${{ secrets.SONAR_URL }} \
              -Dsonar.login=${{ secrets.SONAR_TOKEN }}
